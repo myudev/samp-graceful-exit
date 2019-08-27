@@ -1,5 +1,7 @@
 SAMP Graceful Exit rel1 - Don't get your data lost.
 ======
+[![Build Status](https://travis-ci.org/myudev/samp-graceful-exit.svg?branch=master)](https://travis-ci.org/myudev/samp-graceful-exit)
+
 ## What is this?
 This plug-in provides you with a simple but powerful function - catch signals on Windows on Linux.
 
@@ -50,3 +52,6 @@ public OnUngracefulExit(ExitFlags:reason)
   return true;
 }
 ```
+
+## Thanks
+[Southclaws](https://github.com/Southclaws/) - For the [boilerplate](https://github.com/Southclaws/samp-plugin-boilerplate), cbf setting up this shit <3
