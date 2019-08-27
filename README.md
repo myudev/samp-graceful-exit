@@ -1,4 +1,4 @@
-SAMP Graceful Exit - Don't get your data lost.
+SAMP Graceful Exit rel1 - Don't get your data lost.
 ======
 ## What is this?
 This plug-in provides you with a simple but powerful function - catch signals on Windows on Linux.
