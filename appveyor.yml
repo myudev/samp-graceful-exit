@@ -18,14 +18,3 @@ build_script:
 artifacts:
   - path: test/plugins/$(configuration)/samp-graceful-exit.dll
     name: Plugin
-
-deploy:
-  - provider: BinTray
-    username: southclaws
-    api_key:
-      secure: Bdfem9a83asj2HOeyqxivFLgVJP0VAnWzlxZhJ46buc8imYqegz+fycY/jYim5po
-    subject: southclaws
-    repo: samp-plugin-boilerplate
-    package: builds
-    publish: true
-    override: true
