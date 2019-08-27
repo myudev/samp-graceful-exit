@@ -1,6 +1,6 @@
 SAMP Graceful Exit rel1 - Don't get your data lost.
 ======
-[![Build Status](https://travis-ci.org/myudev/samp-graceful-exit.svg?branch=master)](https://travis-ci.org/myudev/samp-graceful-exit)
+[![Build Status](https://travis-ci.org/myudev/samp-graceful-exit.svg?branch=master)](https://travis-ci.org/myudev/samp-graceful-exit) [![Build status](https://ci.appveyor.com/api/projects/status/mwtmn0hpx4tmm456?svg=true)](https://ci.appveyor.com/project/myudev/samp-graceful-exit)
 
 ## What is this?
 This plug-in provides you with a simple but powerful function - catch signals on Windows on Linux.
