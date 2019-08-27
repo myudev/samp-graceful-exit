@@ -1,0 +1,31 @@
+version: "{build}"
+image: Visual Studio 2015
+
+configuration:
+  - Debug
+  - Release
+
+install:
+  - git submodule update --init --recursive .
+
+before_build:
+  - mkdir build && cd build
+  - cmake .. -G "Visual Studio 14 2015"
+
+build_script:
+  - cmake --build . --config %CONFIGURATION%
+
+artifacts:
+  - path: test/plugins/$(configuration)/samp-graceful-exit.dll
+    name: Plugin
+
+deploy:
+  - provider: BinTray
+    username: southclaws
+    api_key:
+      secure: Bdfem9a83asj2HOeyqxivFLgVJP0VAnWzlxZhJ46buc8imYqegz+fycY/jYim5po
+    subject: southclaws
+    repo: samp-plugin-boilerplate
+    package: builds
+    publish: true
+    override: true
