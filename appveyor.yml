@@ -18,3 +18,11 @@ build_script:
 artifacts:
   - path: test/plugins/$(configuration)/samp-graceful-exit.dll
     name: Plugin
+
+deploy:
+  - provider: GitHub
+  auth_token:
+    secure: /+BYYfh7qEKA0DjBHgI2oTjx2K5dCqCUM8itFKkah4k8gss/hCWTmm4uIbdwkZNg
+  repository: samp-graceful-exit
+  artifact: Plugin
+  force_update: true
