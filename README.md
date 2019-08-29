@@ -3,9 +3,11 @@ SAMP Graceful Exit rel1 - Don't get your data lost.
 [![Build Status](https://travis-ci.org/myudev/samp-graceful-exit.svg?branch=master)](https://travis-ci.org/myudev/samp-graceful-exit) [![Build status](https://ci.appveyor.com/api/projects/status/mwtmn0hpx4tmm456?svg=true)](https://ci.appveyor.com/project/myudev/samp-graceful-exit)
 
 ## What is this?
-This plug-in provides you with a simple but powerful function - catch signals on Windows on Linux.
+This plug-in provides you with a simple but powerful function - catch signals on Windows and Linux.
 
-With this plug-in you're able to catch user signals sent to the process and interrupt on f.e. CTRL+C shutdowns allowing your to save your data before server shutdown.
+With this plug-in you're able to catch user signals sent to the process and interrupt on f.e. CTRL+C shutdowns allowing you to save your player data / server data before server shutdown and avoid mistakes.
+
+This plug-in also optimally pleases automation script developers you're able to properly send commands to the server almost immediately on the system locally; means; You can save all your data before shutting down the server or announce messages on linux using UserSignal1 or 2.
 
 Keep in mind that this plug-in can't catch every process shutdown as systems force the shutdown of a system in one or another way.
 
